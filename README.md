@@ -11,4 +11,8 @@ Caso não possua uma impressora 3D, as peças de plásticos poderão ser subisti
 
 Qualquer dúvida, poste no canal do youtube para que eu possa também ajudar os outros com a sua pergunta. :-)
 
+Inscreva-se em nosso canal do youtube!
 
+https://www.youtube.com/channel/UCpnibmz9Nv3VsjsLF7dEDkA
+
+Até a próxima!
