@@ -1,26 +1,26 @@
 /*
 Seguidor de Luz Solar para painel solar
 Mais tutoriais no blog: http://makerbrasiltv.wordpress.com
-Gotou? Tem algum projeto que tenha o interesse de compartilhar para todos?
-Entre em nosso blog e envie uma mensagem com assunto, Projeto para todos
-Curta nosso canal do youtube para nos ajudar a mudar a educacao do Brasil, para melhor
+Gotou? Tem algum projeto que tenha o interesse em compartilhar para todos?
+Entre em nosso blog e envie uma mensagem com assunto, Projeto para todos.
+Curta nosso canal do youtube para nos ajudar a mudar a educacao do Brasil, para melhor.
+Faça sua parte :-)
 */
 
 
-#include <Servo.h> // include Servo library 
-
-Servo horizontal; // horizontal servo
+#include <Servo.h>
+Servo horizontal;    // horizontal servo
 int servoh = 90;     // stand horizontal servo
 
-Servo vertical;   // vertical servo 
+Servo vertical;      // vertical servo 
 int servov = 90;     // stand vertical servo
 
 // LDR pin connections
 //  name  = analogpin;
-int ldrlt = 2; //LDR baixo esquerda
-int ldrrt = 3; //LDR baixo direita
-int ldrld = 0; //LDR topo esquerda
-int ldrrd = 1 ; //ldr topo direita
+int ldrlt = 2;       //LDR baixo esquerda
+int ldrrt = 3;       //LDR baixo direita
+int ldrld = 0;       //LDR topo esquerda
+int ldrrd = 1;       //LDR topo direita
 
 void setup()
 {
@@ -39,12 +39,12 @@ void loop()
   int dtime = analogRead(4)/20;  
   int tol = analogRead(5)/4;
   
-  int avt = (lt + rt) / 2; // valor do topo
-  int avd = (ld + rd) / 2; // valor de baixo
-  int avl = (lt + ld) / 2; // valor da esquerda
-  int avr = (rt + rd) / 2; // valor da direita
-  int dvert = avt - avd; // verifica a diferenca do topo e de baixo
-  int dhoriz = avl - avr;// verifica a diferenca da esquerda e da direita
+  int avt = (lt + rt) / 2;    // valor do topo
+  int avd = (ld + rd) / 2;    // valor de baixo
+  int avl = (lt + ld) / 2;    // valor da esquerda
+  int avr = (rt + rd) / 2;    // valor da direita
+  int dvert = avt - avd;      // verifica a diferenca do topo e de baixo
+  int dhoriz = avl - avr;     // verifica a diferenca da esquerda e da direita
     
   if (-1*tol > dvert || dvert > tol) // verifica a diferenca e a tolerancia se nao muda o angulo vertical 
   {
